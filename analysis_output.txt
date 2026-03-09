@@ -1,0 +1,53 @@
+﻿Analyzing Service Center App...                                 
+
+   info - Parameter 'key' could be a super parameter - lib\main.dart:28:9 - use_super_parameters
+warning - Unused import: 'package:flutter/material.dart' - lib\router\app_router.dart:1:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\screens\admin\inventory_management.dart:10:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\customer\book_service.dart:8:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\customer\book_service.dart:47:64 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\screens\customer\customer_dashboard.dart:7:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\customer\customer_dashboard.dart:79:76 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\customer\customer_dashboard.dart:88:78 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\screens\customer\customer_garage.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\customer\service_history.dart:10:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\login_screen.dart:9:9 - use_super_parameters
+  error - The named parameter 'maxWidth' isn't defined - lib\screens\login_screen.dart:38:13 - undefined_named_parameter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\login_screen.dart:48:45 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\screens\main_scaffold.dart:21:9 - use_super_parameters
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\screens\main_scaffold.dart:66:28 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\main_scaffold.dart:159:63 - deprecated_member_use
+  error - The getter 'kanbanSquare' isn't defined for the type 'LucideIcons' - lib\screens\main_scaffold.dart:201:32 - undefined_getter
+   info - Parameter 'key' could be a super parameter - lib\screens\manager\active_jobs_list.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\manager\manager_dashboard.dart:7:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\manager\staff_attendance.dart:6:9 - use_super_parameters
+warning - Unused import: '../../widgets/custom_badge.dart' - lib\screens\owner\hq_analytics.dart:4:8 - unused_import
+warning - Unused import: '../../widgets/custom_textfield.dart' - lib\screens\owner\hq_analytics.dart:5:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\screens\owner\hq_analytics.dart:8:9 - use_super_parameters
+  error - The named parameter 'meta' is required, but there's no corresponding argument - lib\screens\owner\hq_analytics.dart:124:34 - missing_required_argument
+  error - The named parameter 'axisSide' isn't defined - lib\screens\owner\hq_analytics.dart:124:50 - undefined_named_parameter
+   info - Parameter 'key' could be a super parameter - lib\screens\technician\tech_dashboard.dart:6:9 - use_super_parameters
+   info - The private field _workedTime could be 'final' - lib\screens\technician\tech_dashboard.dart:14:12 - prefer_final_fields
+   info - Parameter 'key' could be a super parameter - lib\screens\technician\tech_dashboard.dart:113:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\technician\tech_dashboard.dart:120:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\technician\tech_dashboard.dart:120:73 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\screens\technician\tech_job_board.dart:10:9 - use_super_parameters
+   info - Use interpolation to compose strings and values - lib\screens\technician\tech_job_board.dart:61:45 - prefer_interpolation_to_compose_strings
+   info - Parameter 'key' could be a super parameter - lib\screens\technician\tech_job_board.dart:93:9 - use_super_parameters
+   info - Unnecessary use of 'toList' in a spread - lib\screens\technician\tech_job_board.dart:159:22 - unnecessary_to_list_in_spreads
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\technician\tech_job_board.dart:172:70 - deprecated_member_use
+  error - There's no constant named 'dashed' in 'BorderStyle' - lib\screens\technician\tech_job_board.dart:173:109 - undefined_enum_constant
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\theme\app_theme.dart:38:18 - argument_type_not_assignable
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\theme\app_theme.dart:128:18 - argument_type_not_assignable
+   info - Parameter 'key' could be a super parameter - lib\widgets\custom_badge.dart:9:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\custom_badge.dart:24:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\custom_badge.dart:28:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\custom_badge.dart:32:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\custom_badge.dart:36:55 - deprecated_member_use
+warning - This default clause is covered by the previous cases - lib\widgets\custom_badge.dart:40:7 - unreachable_switch_default
+   info - Parameter 'key' could be a super parameter - lib\widgets\custom_button.dart:13:9 - use_super_parameters
+warning - This default clause is covered by the previous cases - lib\widgets\custom_button.dart:62:7 - unreachable_switch_default
+   info - Parameter 'key' could be a super parameter - lib\widgets\custom_card.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\widgets\custom_textfield.dart:14:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\custom_textfield.dart:35:64 - deprecated_member_use
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+

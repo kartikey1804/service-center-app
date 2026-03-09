@@ -1,0 +1,120 @@
+﻿
+  error - The method 
+'addStaffMember' isn't 
+defined for the type 
+'DataProvider' - lib\sc
+reens\manager\staff_att
+endance.dart:56:67 - 
+undefined_method
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:247:17 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:247:18 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:248:15 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:248:16 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:249:13 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:249:14 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:250:11 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:251:9 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:251:10 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:252:7 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:252:8 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:253:5 - 
+expected_executable
+  error - Unexpected 
+text ';' - lib\screens\
+owner\hq_analytics.dart
+:253:6 - 
+unexpected_token
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:254:3 - 
+expected_executable
+  error - Expected a 
+method, getter, setter 
+or operator 
+declaration - lib\scree
+ns\owner\hq_analytics.d
+art:255:1 - 
+expected_executable
+  error - The named 
+parameter 'boxShadow' 
+isn't defined - lib\scr
+eens\technician\vin_sca
+nner_screen.dart:76:27 
+- undefined_named_param
+eter
+
+
