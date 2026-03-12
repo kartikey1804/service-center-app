@@ -10,6 +10,9 @@ class CustomTextField extends StatelessWidget {
   final Widget? prefixIcon;
   final String? Function(String?)? validator;
   final int maxLines;
+  final VoidCallback? onTap;
+  final bool readOnly;
+  final ValueChanged<String>? onChanged;
 
   const CustomTextField({
     Key? key,
@@ -22,6 +25,9 @@ class CustomTextField extends StatelessWidget {
     this.prefixIcon,
     this.validator,
     this.maxLines = 1,
+    this.onTap,
+    this.readOnly = false,
+    this.onChanged,
   }) : super(key: key);
 
   @override
@@ -32,9 +38,9 @@ class CustomTextField extends StatelessWidget {
         Text(
           label,
           style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.6),
-                fontSize: 13,
-              ),
+            color: Theme.of(context).colorScheme.onSurface.withOpacity(0.6),
+            fontSize: 13,
+          ),
         ),
         const SizedBox(height: 6),
         TextFormField(
@@ -43,6 +49,9 @@ class CustomTextField extends StatelessWidget {
           keyboardType: keyboardType,
           validator: validator,
           maxLines: obscureText ? 1 : maxLines,
+          onTap: onTap,
+          readOnly: readOnly,
+          onChanged: onChanged,
           decoration: InputDecoration(
             hintText: hintText,
             suffixIcon: suffixIcon,

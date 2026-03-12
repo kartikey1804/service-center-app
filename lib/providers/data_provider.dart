@@ -8,11 +8,14 @@ class DataProvider extends ChangeNotifier {
   List<Map<String, dynamic>> _customerVehicles = [];
   List<Map<String, dynamic>> _customerQuotes = [];
   Map<String, dynamic> _stats = {};
-  
+
   // Phase 2
   List<Map<String, dynamic>> _notifications = [];
   List<Map<String, dynamic>> _invoices = [];
   List<Map<String, dynamic>> _staff = [];
+  List<Map<String, dynamic>> _partsRequests = [];
+  List<Map<String, dynamic>> _chatConversations = [];
+  Map<String, dynamic> _technicianPerformanceMetrics = {};
 
   bool _isLoading = false;
 
@@ -22,11 +25,15 @@ class DataProvider extends ChangeNotifier {
   List<Map<String, dynamic>> get customerVehicles => _customerVehicles;
   List<Map<String, dynamic>> get customerQuotes => _customerQuotes;
   Map<String, dynamic> get stats => _stats;
-  
+
   List<Map<String, dynamic>> get notifications => _notifications;
   List<Map<String, dynamic>> get invoices => _invoices;
   List<Map<String, dynamic>> get staff => _staff;
-  
+  List<Map<String, dynamic>> get partsRequests => _partsRequests;
+  List<Map<String, dynamic>> get chatConversations => _chatConversations;
+  Map<String, dynamic> get technicianPerformanceMetrics =>
+      _technicianPerformanceMetrics;
+
   bool get isLoading => _isLoading;
 
   DataProvider() {
@@ -45,10 +52,14 @@ class DataProvider extends ChangeNotifier {
     _customerVehicles = MockDataService.getCustomerVehicles();
     _customerQuotes = MockDataService.getCustomerQuotes();
     _stats = MockDataService.getDashboardStats();
-    
+
     _notifications = MockDataService.getNotifications();
     _invoices = MockDataService.getInvoices();
     _staff = MockDataService.getStaff();
+    _partsRequests = MockDataService.getPartsRequests();
+    _chatConversations = MockDataService.getChatConversations();
+    _technicianPerformanceMetrics =
+        MockDataService.getTechnicianPerformanceMetrics();
 
     _isLoading = false;
     notifyListeners();
@@ -59,6 +70,22 @@ class DataProvider extends ChangeNotifier {
     if (index != -1) {
       _activeJobs[index]['status'] = newStatus;
       notifyListeners();
+    }
+  }
+
+  void updateInspectionChecklistItem(
+    String jobId,
+    String item,
+    bool isChecked,
+  ) {
+    final jobIndex = _activeJobs.indexWhere((j) => j['id'] == jobId);
+    if (jobIndex != -1) {
+      if (_activeJobs[jobIndex].containsKey('inspectionChecklist')) {
+        (_activeJobs[jobIndex]['inspectionChecklist']
+                as Map<String, bool>)[item] =
+            isChecked;
+        notifyListeners();
+      }
     }
   }
 
@@ -98,7 +125,7 @@ class DataProvider extends ChangeNotifier {
       'name': name,
       'role': role,
       'status': 'Offline',
-      'hours': '0h 0m'
+      'hours': '0h 0m',
     });
     notifyListeners();
   }
@@ -113,12 +140,106 @@ class DataProvider extends ChangeNotifier {
 
   void generateInvoice(String jobId, double amount) {
     _invoices.insert(0, {
-      'id': 'INV-${DateTime.now().millisecondsSinceEpoch.toString().substring(7)}',
+      'id':
+          'INV-${DateTime.now().millisecondsSinceEpoch.toString().substring(7)}',
       'vehicle': 'Service Job $jobId',
       'amount': amount,
       'date': 'Today',
-      'status': 'Paid'
+      'status': 'Paid',
     });
     notifyListeners();
+  }
+
+  void markNotificationAsRead(String notificationId) {
+    final index = _notifications.indexWhere((n) => n['id'] == notificationId);
+    if (index != -1) {
+      _notifications[index]['isRead'] = true;
+      notifyListeners();
+    }
+  }
+
+  void addChatMessage(String chatId, String sender, String message) {
+    final chatIndex = _chatConversations.indexWhere(
+      (chat) => chat['id'] == chatId,
+    );
+    if (chatIndex != -1) {
+      (_chatConversations[chatIndex]['messages'] as List).add({
+        'sender': sender,
+        'message': message,
+        'time': 'Just now',
+      });
+      _chatConversations[chatIndex]['lastMessage'] = message;
+      _chatConversations[chatIndex]['lastMessageTime'] = 'Just now';
+      notifyListeners();
+    }
+  }
+
+  void sendMockReply(String chatId) {
+    final chatIndex = _chatConversations.indexWhere(
+      (chat) => chat['id'] == chatId,
+    );
+    if (chatIndex != -1) {
+      final participants =
+          _chatConversations[chatIndex]['participants'] as List<String>;
+      final sender = participants.firstWhere(
+        (p) => p != 'Mike Ross',
+        orElse: () => participants.first,
+      ); // Mock reply from other participant
+
+      Future.delayed(const Duration(seconds: 2), () {
+        (_chatConversations[chatIndex]['messages'] as List).add({
+          'sender': sender,
+          'message': 'Okay, got it. Will look into that.',
+          'time': 'Just now',
+        });
+        _chatConversations[chatIndex]['lastMessage'] =
+            'Okay, got it. Will look into that.';
+        _chatConversations[chatIndex]['lastMessageTime'] = 'Just now';
+        notifyListeners();
+      });
+    }
+  }
+
+  void updateJobEstimatedTime(String jobId, String newTime) {
+    final index = _activeJobs.indexWhere((j) => j['id'] == jobId);
+    if (index != -1) {
+      _activeJobs[index]['estimatedCompletionTime'] = newTime;
+      notifyListeners();
+    }
+  }
+
+  void addCustomerCommunicationLogEntry(
+    String jobId,
+    String type,
+    String message,
+  ) {
+    final jobIndex = _activeJobs.indexWhere((j) => j['id'] == jobId);
+    if (jobIndex != -1) {
+      if (!_activeJobs[jobIndex].containsKey('customerCommunicationLog')) {
+        _activeJobs[jobIndex]['customerCommunicationLog'] = [];
+      }
+      (_activeJobs[jobIndex]['customerCommunicationLog'] as List).add({
+        'type': type,
+        'message': message,
+        'timestamp': 'Just now', // In a real app, use DateTime.now()
+      });
+      notifyListeners();
+    }
+  }
+
+  void updateCompletionChecklistItem(
+    String jobId,
+    String item,
+    bool isChecked,
+  ) {
+    final jobIndex = _activeJobs.indexWhere((j) => j['id'] == jobId);
+    if (jobIndex != -1) {
+      if (_activeJobs[jobIndex].containsKey('completionChecklist')) {
+        (_activeJobs[jobIndex]['completionChecklist']
+                as Map<String, bool>)[item] =
+            isChecked;
+        notifyListeners();
+      }
+    }
   }
 }

@@ -14,6 +14,25 @@ class _VinScannerScreenState extends State<VinScannerScreen> with SingleTickerPr
   late AnimationController _animationController;
   late Animation<double> _animation;
 
+  final Map<String, dynamic> _mockVehicleHistory = {
+    'vin': 'VIN-MOCK-12345',
+    'make': 'Toyota',
+    'model': 'Camry',
+    'year': 2020,
+    'color': 'Silver',
+    'mileage': '55,000 miles',
+    'engine': '2.5L I4',
+    'serviceHistory': [
+      {'date': '2023-01-15', 'service': 'Oil Change', 'notes': 'Used synthetic oil'},
+      {'date': '2023-07-22', 'service': 'Tire Rotation', 'notes': 'Checked tire pressure'},
+      {'date': '2024-02-10', 'service': 'Brake Inspection', 'notes': 'Front pads at 50%'},
+    ],
+    'recalls': [
+      {'date': '2022-05-01', 'description': 'Fuel pump recall (completed)'},
+    ],
+    'ownerHistory': 'Single owner, no accidents reported',
+  };
+
   @override
   void initState() {
     super.initState();
@@ -35,7 +54,7 @@ class _VinScannerScreenState extends State<VinScannerScreen> with SingleTickerPr
     UiUtils.showToast(context, 'VIN Scanned Successfully!');
     Future.delayed(const Duration(seconds: 1), () {
         if (!mounted) return;
-        Navigator.pop(context, 'VIN-MOCK-${Random().nextInt(9999)}');
+        Navigator.pop(context, _mockVehicleHistory);
     });
   }
 

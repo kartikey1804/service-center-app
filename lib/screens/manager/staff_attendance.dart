@@ -156,7 +156,19 @@ class _StaffAttendanceState extends State<StaffAttendance> {
                           rows: staff.map((s) {
                             final isOnline = s['status'] == 'Online';
                             return DataRow(cells: [
-                              DataCell(Text(s['name'], style: const TextStyle(fontWeight: FontWeight.bold))),
+                              DataCell(
+                                Row(
+                                  children: [
+                                    if (s['image'] != null)
+                                      CircleAvatar(
+                                        radius: 14,
+                                        backgroundImage: AssetImage(s['image']),
+                                      ),
+                                    if (s['image'] != null) const SizedBox(width: 12),
+                                    Text(s['name'], style: const TextStyle(fontWeight: FontWeight.bold)),
+                                  ],
+                                ),
+                              ),
                               DataCell(Text(s['role'])),
                               DataCell(CustomBadge(text: s['status'], type: isOnline ? BadgeType.green : BadgeType.gray)),
                               DataCell(Text(s['hours'])),

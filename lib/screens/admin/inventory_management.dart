@@ -49,7 +49,15 @@ class InventoryManagement extends StatelessWidget {
                 rows: inventory.map((item) {
                   final isLow = (item['stock'] as int) < (item['minThreshold'] as int);
                   return DataRow(cells: [
-                    DataCell(Text(item['name'], style: const TextStyle(fontWeight: FontWeight.bold))),
+                    DataCell(
+                      Row(
+                        children: [
+                          _getPartIcon(item['name']),
+                          const SizedBox(width: 12),
+                          Text(item['name'], style: const TextStyle(fontWeight: FontWeight.bold)),
+                        ],
+                      ),
+                    ),
                     DataCell(Text('${item['stock']} units', style: TextStyle(color: isLow ? Colors.red : null, fontWeight: isLow ? FontWeight.bold : FontWeight.normal))),
                     DataCell(Text('${item['minThreshold']} units')),
                     DataCell(Text('\$${item['price'].toStringAsFixed(2)}')),
@@ -74,5 +82,15 @@ class InventoryManagement extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Widget _getPartIcon(String name) {
+    IconData icon = Icons.settings;
+    if (name.contains('Oil')) icon = Icons.opacity;
+    if (name.contains('Brake')) icon = Icons.vibration;
+    if (name.contains('Filter')) icon = Icons.filter_alt;
+    if (name.contains('Spark')) icon = Icons.bolt;
+    
+    return Icon(icon, size: 20, color: Colors.grey);
   }
 }

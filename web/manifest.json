@@ -1,11 +1,11 @@
 {
-    "name": "service_center_app",
-    "short_name": "service_center_app",
+    "name": "AutoCare Hub Service Center",
+    "short_name": "AutoCare",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#1d4ed8",
+    "theme_color": "#1d4ed8",
+    "description": "Enterprise-grade Car & Bike Service Center Management App.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

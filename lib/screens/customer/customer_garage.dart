@@ -44,17 +44,29 @@ class CustomerGarage extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 16.0),
                   child: CustomCard(
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('${v['make']} ${v['model']}', style: Theme.of(context).textTheme.titleLarge),
-                            const SizedBox(height: 4),
-                            Text('${v['year']} • License: ${v['plate']}', style: Theme.of(context).textTheme.bodyMedium),
-                            const SizedBox(height: 12),
-                            Text('Next Service: ${v['nextService']}', style: Theme.of(context).textTheme.labelLarge),
-                          ],
+                        if (v['image'] != null)
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: Image.asset(
+                              v['image'],
+                              width: 100,
+                              height: 80,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('${v['make']} ${v['model']}', style: Theme.of(context).textTheme.titleLarge),
+                              const SizedBox(height: 4),
+                              Text('${v['year']} • License: ${v['plate']}', style: Theme.of(context).textTheme.bodyMedium),
+                              const SizedBox(height: 12),
+                              Text('Next Service: ${v['nextService']}', style: Theme.of(context).textTheme.labelLarge),
+                            ],
+                          ),
                         ),
                         const CustomBadge(text: 'Active', type: BadgeType.green),
                       ],
