@@ -1,0 +1,688 @@
+﻿Analyzing Service Center App...                                 
+
+   info - The constant name 'PIPELINE_HISTORY_COLLECTION' isn't a lowerCamelCase identifier - lib\core\pipeline\audit_logger.dart:5:23 - constant_identifier_names
+   info - Don't invoke 'print' in production code - lib\core\pipeline\audit_logger.dart:29:7 - avoid_print
+warning - Unused import: 'package:flutter/foundation.dart' - lib\core\pipeline\pipeline_engine.dart:1:8 - unused_import
+  error - The method 'setAll' isn't defined for the type 'ModifierBuilder' - lib\core\pipeline\pipeline_engine.dart:48:29 - undefined_method
+   info - Don't invoke 'print' in production code - lib\core\pipeline\pipeline_engine.dart:66:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\pipeline\pipeline_engine.dart:69:7 - avoid_print
+warning - Unused import: 'package:mongo_dart/mongo_dart.dart' - lib\core\pipeline\pipeline_stage.dart:1:8 - unused_import
+   info - The constant name 'BOOKING_CREATED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:5:3 - constant_identifier_names
+   info - The constant name 'MANAGER_REVIEW' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:6:3 - constant_identifier_names
+   info - The constant name 'TECHNICIAN_ASSIGNED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:7:3 - constant_identifier_names
+   info - The constant name 'SERVICE_STARTED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:8:3 - constant_identifier_names
+   info - The constant name 'PART_REQUESTED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:9:3 - constant_identifier_names
+   info - The constant name 'PART_APPROVAL_PENDING' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:10:3 - constant_identifier_names
+   info - The constant name 'PART_ORDERED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:11:3 - constant_identifier_names
+   info - The constant name 'WAITING_FOR_PART' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:12:3 - constant_identifier_names
+   info - The constant name 'SERVICE_COMPLETED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:13:3 - constant_identifier_names
+   info - The constant name 'PAYMENT_PENDING' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:14:3 - constant_identifier_names
+   info - The constant name 'PAYMENT_COMPLETED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:15:3 - constant_identifier_names
+   info - The constant name 'JOB_CLOSED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:16:3 - constant_identifier_names
+   info - The constant name 'TOW_REQUEST_CREATED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:19:3 - constant_identifier_names
+   info - The constant name 'MANAGER_DISTANCE_REVIEW' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:20:3 - constant_identifier_names
+   info - The constant name 'TOW_APPROVED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:21:3 - constant_identifier_names
+   info - The constant name 'DRIVER_ASSIGNED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:22:3 - constant_identifier_names
+   info - The constant name 'DRIVER_EN_ROUTE' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:23:3 - constant_identifier_names
+   info - The constant name 'VEHICLE_PICKED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:24:3 - constant_identifier_names
+   info - The constant name 'VEHICLE_DELIVERED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:25:3 - constant_identifier_names
+   info - The constant name 'TOW_PAYMENT_COMPLETED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:26:3 - constant_identifier_names
+   info - The constant name 'TOW_JOB_CLOSED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:27:3 - constant_identifier_names
+   info - The constant name 'PART_REQUISITION_CREATED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:30:3 - constant_identifier_names
+   info - The constant name 'MANAGER_PART_REVIEW' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:31:3 - constant_identifier_names
+   info - The constant name 'PART_PROCUREMENT_ORDERED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:32:3 - constant_identifier_names
+   info - The constant name 'PART_RECEIVED_AT_CENTER' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:33:3 - constant_identifier_names
+   info - The constant name 'PART_INSTALLED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:34:3 - constant_identifier_names
+   info - The constant name 'REVIEW_SUBMITTED' isn't a lowerCamelCase identifier - lib\core\pipeline\pipeline_stage.dart:35:3 - constant_identifier_names
+   info - The constant name 'JOBS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:8:23 - constant_identifier_names
+   info - The constant name 'INVENTORY_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:9:23 - constant_identifier_names
+   info - The constant name 'CUSTOMER_VEHICLES_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:10:23 - constant_identifier_names
+   info - The constant name 'CUSTOMER_QUOTES_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:11:23 - constant_identifier_names
+   info - The constant name 'NOTIFICATIONS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:12:23 - constant_identifier_names
+   info - The constant name 'INVOICES_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:13:23 - constant_identifier_names
+   info - The constant name 'STAFF_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:14:23 - constant_identifier_names
+   info - The constant name 'PARTS_REQUESTS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:15:23 - constant_identifier_names
+   info - The constant name 'CHAT_CONVERSATIONS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:16:23 - constant_identifier_names
+   info - The constant name 'TIME_TRACKING_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:17:23 - constant_identifier_names
+   info - The constant name 'PERFORMANCE_METRICS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:18:23 - constant_identifier_names
+   info - The constant name 'USERS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:19:23 - constant_identifier_names
+   info - The constant name 'PARTS_REQUISITION_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:20:23 - constant_identifier_names
+   info - The constant name 'TOW_REQUESTS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:21:23 - constant_identifier_names
+   info - Don't invoke 'print' in production code - lib\data\services\mongodb_service.dart:35:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\data\services\mongodb_service.dart:49:7 - avoid_print
+  error - The name 'Provider' is defined in the libraries 'package:provider/src/provider.dart (via package:provider/provider.dart)' and 'package:riverpod/src/providers/provider.dart (via package:flutter_riverpod/flutter_riverpod.dart)' - lib\main.dart:51:27 - ambiguous_import
+  error - Classes can only extend other classes - lib\presentation\providers\pipeline_providers.dart:47:39 - extends_non_class
+  error - Too many positional arguments: 0 expected, but 1 found - lib\presentation\providers\pipeline_providers.dart:51:69 - extra_positional_arguments
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:56:5 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:60:9 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:62:9 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:65:7 - undefined_identifier
+  error - The function 'StateNotifierProvider' isn't defined - lib\presentation\providers\pipeline_providers.dart:115:33 - undefined_function
+  error - Classes can only extend other classes - lib\presentation\providers\pipeline_providers.dart:122:35 - extends_non_class
+  error - Too many positional arguments: 0 expected, but 1 found - lib\presentation\providers\pipeline_providers.dart:126:65 - extra_positional_arguments
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:131:5 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:135:9 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:137:9 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:140:7 - undefined_identifier
+  error - The function 'StateNotifierProvider' isn't defined - lib\presentation\providers\pipeline_providers.dart:189:29 - undefined_function
+  error - Classes can only extend other classes - lib\presentation\providers\pipeline_providers.dart:196:36 - extends_non_class
+  error - Too many positional arguments: 0 expected, but 1 found - lib\presentation\providers\pipeline_providers.dart:200:66 - extra_positional_arguments
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:205:5 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:209:9 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:211:9 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\pipeline_providers.dart:214:7 - undefined_identifier
+  error - The function 'StateNotifierProvider' isn't defined - lib\presentation\providers\pipeline_providers.dart:263:30 - undefined_function
+warning - Unused import: 'package:flutter/material.dart' - lib\presentation\router\app_router.dart:1:8 - unused_import
+warning - Unused import: 'package:provider/provider.dart' - lib\presentation\screens\customer\book_service.dart:3:8 - unused_import
+warning - Unused import: 'package:mongo_dart/mongo_dart.dart' - lib\presentation\screens\customer\book_service.dart:11:8 - unused_import
+  error - The type 'Consumer' is declared with 0 type parameters, but 1 type arguments were given - lib\presentation\screens\customer\book_service.dart:41:12 - wrong_number_of_type_arguments
+  error - The getter 'customerVehicles' isn't defined for the type 'WidgetRef' - lib\presentation\screens\customer\book_service.dart:43:39 - undefined_getter
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:75:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:76:23 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:83:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:84:23 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\book_service.dart:262:68 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\customer_dashboard.dart:147:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\customer_dashboard.dart:169:49 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\presentation\screens\customer\customer_garage.dart:157:27 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\customer_garage.dart:201:41 - use_build_context_synchronously
+warning - The value of the field '_otp' isn't used - lib\presentation\screens\customer\emergency_tow_screen.dart:29:10 - unused_field
+  error - 'Consumer' isn't a function - lib\presentation\screens\customer\emergency_tow_screen.dart:53:12 - invocation_of_non_function
+  error - The name 'Consumer' is defined in the libraries 'package:flutter_riverpod/src/core.dart (via package:flutter_riverpod/flutter_riverpod.dart)' and 'package:provider/src/consumer.dart (via package:provider/provider.dart)' - lib\presentation\screens\customer\emergency_tow_screen.dart:53:12 - ambiguous_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\emergency_tow_screen.dart:106:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\emergency_tow_screen.dart:293:60 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\emergency_tow_screen.dart:364:37 - use_build_context_synchronously
+  error - Expected to find ')' - lib\presentation\screens\customer\emergency_tow_screen.dart:370:19 - expected_token
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\customer\invoice_screen.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\customer\payment_screen.dart:11:9 - use_super_parameters
+  error - Undefined class 'Key' - lib\presentation\screens\customer\payment_screen.dart:12:5 - undefined_class
+  error - There's no constant named 'JOB_COMPLETED' in 'PipelineStageType' - lib\presentation\screens\customer\payment_screen.dart:43:35 - undefined_enum_constant
+  error - Undefined name 'Navigator' - lib\presentation\screens\customer\payment_screen.dart:50:5 - undefined_identifier
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\payment_screen.dart:51:7 - use_build_context_synchronously
+  error - The method 'MaterialPageRoute' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:52:7 - undefined_method
+  error - The name 'InvoiceScreen' isn't a class - lib\presentation\screens\customer\payment_screen.dart:53:37 - creation_with_non_type
+  error - Undefined name 'UiUtils' - lib\presentation\screens\customer\payment_screen.dart:56:5 - undefined_identifier
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\payment_screen.dart:56:23 - use_build_context_synchronously
+  error - Undefined class 'Widget' - lib\presentation\screens\customer\payment_screen.dart:60:3 - undefined_class
+  error - Undefined class 'BuildContext' - lib\presentation\screens\customer\payment_screen.dart:60:16 - undefined_class
+  error - The method 'Scaffold' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:61:12 - undefined_method
+  error - The method 'AppBar' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:62:15 - undefined_method
+  error - The name 'Text' isn't a class - lib\presentation\screens\customer\payment_screen.dart:62:35 - creation_with_non_type
+  error - The method 'Center' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:63:13 - undefined_method
+  error - The method 'SingleChildScrollView' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:64:16 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\customer\payment_screen.dart:65:26 - undefined_identifier
+  error - The method 'Container' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:66:18 - undefined_method
+  error - The name 'BoxConstraints' isn't a class - lib\presentation\screens\customer\payment_screen.dart:67:32 - creation_with_non_type
+  error - The method 'CustomCard' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:68:20 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\customer\payment_screen.dart:69:30 - undefined_identifier
+  error - The method 'Column' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:70:22 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\customer\payment_screen.dart:71:37 - undefined_identifier
+  error - Undefined name 'MainAxisSize' - lib\presentation\screens\customer\payment_screen.dart:72:31 - undefined_identifier
+  error - The name 'Icon' isn't a class - lib\presentation\screens\customer\payment_screen.dart:74:25 - creation_with_non_type
+  error - Undefined name 'Icons' - lib\presentation\screens\customer\payment_screen.dart:74:30 - undefined_identifier
+  error - Undefined name 'Colors' - lib\presentation\screens\customer\payment_screen.dart:74:59 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:75:25 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:76:19 - undefined_method
+  error - Undefined name 'TextAlign' - lib\presentation\screens\customer\payment_screen.dart:76:53 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\customer\payment_screen.dart:76:78 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:77:25 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:78:19 - undefined_method
+  error - Undefined name 'TextAlign' - lib\presentation\screens\customer\payment_screen.dart:78:60 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\customer\payment_screen.dart:78:85 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:79:25 - creation_with_non_type
+  error - The name 'Divider' isn't a class - lib\presentation\screens\customer\payment_screen.dart:80:25 - creation_with_non_type
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:81:25 - creation_with_non_type
+  error - The method 'Row' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:82:19 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\customer\payment_screen.dart:83:40 - undefined_identifier
+  error - The method 'Text' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:85:23 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\customer\payment_screen.dart:85:55 - undefined_identifier
+  error - The method 'Text' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:86:23 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\customer\payment_screen.dart:86:76 - undefined_identifier
+  error - Undefined name 'FontWeight' - lib\presentation\screens\customer\payment_screen.dart:86:137 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:89:25 - creation_with_non_type
+  error - The name 'Divider' isn't a class - lib\presentation\screens\customer\payment_screen.dart:90:25 - creation_with_non_type
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:91:25 - creation_with_non_type
+  error - The method 'TextField' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:92:19 - undefined_method
+  error - The method 'InputDecoration' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:93:33 - undefined_method
+  error - The name 'Icon' isn't a class - lib\presentation\screens\customer\payment_screen.dart:96:41 - creation_with_non_type
+  error - Undefined name 'Icons' - lib\presentation\screens\customer\payment_screen.dart:96:46 - undefined_identifier
+  error - The method 'OutlineInputBorder' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:97:31 - undefined_method
+  error - Undefined name 'BorderRadius' - lib\presentation\screens\customer\payment_screen.dart:97:64 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:100:25 - creation_with_non_type
+  error - The method 'Row' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:101:19 - undefined_method
+  error - The method 'Expanded' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:103:23 - undefined_method
+  error - The method 'TextField' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:104:32 - undefined_method
+  error - The method 'InputDecoration' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:105:39 - undefined_method
+  error - The method 'OutlineInputBorder' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:108:37 - undefined_method
+  error - Undefined name 'BorderRadius' - lib\presentation\screens\customer\payment_screen.dart:108:70 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:112:29 - creation_with_non_type
+  error - The method 'Expanded' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:113:23 - undefined_method
+  error - The method 'TextField' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:114:32 - undefined_method
+  error - The method 'InputDecoration' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:115:39 - undefined_method
+  error - The method 'OutlineInputBorder' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:118:37 - undefined_method
+  error - Undefined name 'BorderRadius' - lib\presentation\screens\customer\payment_screen.dart:118:70 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:124:25 - creation_with_non_type
+  error - The method 'CustomButton' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:125:19 - undefined_method
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\customer\payment_screen.dart:131:25 - creation_with_non_type
+  error - The method 'TextButton' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:132:19 - undefined_method
+  error - Undefined name 'Navigator' - lib\presentation\screens\customer\payment_screen.dart:133:38 - undefined_identifier
+  error - The name 'Text' isn't a class - lib\presentation\screens\customer\payment_screen.dart:134:34 - creation_with_non_type
+  error - The method 'TextStyle' isn't defined for the type '_PaymentScreenState' - lib\presentation\screens\customer\payment_screen.dart:134:63 - undefined_method
+  error - Undefined name 'Colors' - lib\presentation\screens\customer\payment_screen.dart:134:80 - undefined_identifier
+  error - The name 'Provider' is defined in the libraries 'package:provider/src/provider.dart (via package:provider/provider.dart)' and 'package:riverpod/src/providers/provider.dart (via package:flutter_riverpod/flutter_riverpod.dart)' - lib\presentation\screens\customer\service_history.dart:23:15 - ambiguous_import
+  error - The name 'Provider' is defined in the libraries 'package:provider/src/provider.dart (via package:provider/provider.dart)' and 'package:riverpod/src/providers/provider.dart (via package:flutter_riverpod/flutter_riverpod.dart)' - lib\presentation\screens\customer\service_history.dart:108:45 - ambiguous_import
+  error - The name 'Provider' is defined in the libraries 'package:provider/src/provider.dart (via package:provider/provider.dart)' and 'package:riverpod/src/providers/provider.dart (via package:flutter_riverpod/flutter_riverpod.dart)' - lib\presentation\screens\customer\service_history.dart:124:45 - ambiguous_import
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\service_history.dart:243:31 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\service_history.dart:244:35 - use_build_context_synchronously
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\login_screen.dart:9:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\login_screen.dart:48:45 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\presentation\screens\main_scaffold.dart:85:28 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:199:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:243:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:257:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:403:32 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\manager\active_jobs_list.dart:8:9 - use_super_parameters
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\manager\active_jobs_list.dart:76:7 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\presentation\screens\manager\active_jobs_list.dart:88:36 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\presentation\screens\manager\active_jobs_list.dart:89:24 - curly_braces_in_flow_control_structures
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\manager\active_jobs_list.dart:99:31 - use_build_context_synchronously
+warning - Unused import: '../../widgets/custom_textfield.dart' - lib\presentation\screens\manager\staff_attendance.dart:8:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\manager\staff_attendance.dart:12:9 - use_super_parameters
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\presentation\screens\manager\staff_attendance.dart:39:15 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\manager\staff_attendance.dart:117:74 - deprecated_member_use
+warning - Unused import: 'dart:math' - lib\presentation\screens\owner\hq_analytics.dart:1:8 - unused_import
+   info - Constructors in '@immutable' classes should be declared as 'const' - lib\presentation\screens\owner\hq_analytics.dart:13:3 - prefer_const_constructors_in_immutables
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\technician\tech_chat_screen.dart:10:9 - use_super_parameters
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\screens\technician\tech_chat_screen.dart:82:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_chat_screen.dart:118:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_chat_screen.dart:122:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_dashboard.dart:678:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_dashboard.dart:679:26 - deprecated_member_use
+  error - Undefined class 'Widget' - lib\presentation\screens\technician\tech_job_board.dart:9:3 - undefined_class
+  error - Undefined class 'BuildContext' - lib\presentation\screens\technician\tech_job_board.dart:9:16 - undefined_class
+  error - The method 'of' isn't defined for the type 'Provider' - lib\presentation\screens\technician\tech_job_board.dart:10:35 - undefined_method
+  error - The name 'DataProvider' isn't a type, so it can't be used as a type argument - lib\presentation\screens\technician\tech_job_board.dart:10:38 - non_type_as_type_argument
+  error - The name 'Center' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:14:28 - creation_with_non_type
+  error - The method 'CircularProgressIndicator' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:14:42 - undefined_method
+  error - The method 'Center' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:15:24 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:15:38 - undefined_method
+  error - The method 'SingleChildScrollView' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:17:16 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:18:26 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:19:18 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:20:33 - undefined_identifier
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:22:15 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:23:36 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:25:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:27:28 - undefined_identifier
+  error - The name 'Text' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:29:25 - creation_with_non_type
+  error - The method 'TextStyle' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:31:28 - undefined_method
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:31:45 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:35:21 - creation_with_non_type
+  error - The method 'SingleChildScrollView' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:36:15 - undefined_method
+  error - Undefined name 'Axis' - lib\presentation\screens\technician\tech_job_board.dart:37:34 - undefined_identifier
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:38:24 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:39:39 - undefined_identifier
+  error - Local variable '_buildKanbanColumn' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:41:21 - referenced_before_declaration
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:42:27 - creation_with_non_type
+  error - Local variable '_buildKanbanColumn' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:43:21 - referenced_before_declaration
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:44:27 - creation_with_non_type
+  error - Local variable '_buildKanbanColumn' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:45:21 - referenced_before_declaration
+  error - Expected to find ';' - lib\presentation\screens\technician\tech_job_board.dart:52:3 - expected_token
+warning - Dead code - lib\presentation\screens\technician\tech_job_board.dart:54:3 - dead_code
+  error - Expected to find ')' - lib\presentation\screens\technician\tech_job_board.dart:54:3 - expected_token
+   info - The local variable '_showJobDetails' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:54:8 - no_leading_underscores_for_local_identifiers
+  error - Undefined class 'BuildContext' - lib\presentation\screens\technician\tech_job_board.dart:55:5 - undefined_class
+  error - Undefined class 'DataProvider' - lib\presentation\screens\technician\tech_job_board.dart:58:5 - undefined_class
+  error - The method 'showModalBottomSheet' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:60:5 - undefined_method
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:63:24 - undefined_identifier
+  error - The method '_JobDetailsSheet' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:64:25 - undefined_method
+  error - Undefined class 'Widget' - lib\presentation\screens\technician\tech_job_board.dart:68:3 - undefined_class
+   info - The local variable '_buildKanbanColumn' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:68:10 - no_leading_underscores_for_local_identifiers
+  error - Undefined class 'BuildContext' - lib\presentation\screens\technician\tech_job_board.dart:69:5 - undefined_class
+  error - Undefined class 'DataProvider' - lib\presentation\screens\technician\tech_job_board.dart:73:5 - undefined_class
+warning - The value of the local variable 'filteredJobs' isn't used - lib\presentation\screens\technician\tech_job_board.dart:75:11 - unused_local_variable
+  error - The method 'DragTarget' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:79:12 - undefined_method
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:103:9 - undefined_identifier
+  error - The method 'Container' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:107:16 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:109:26 - undefined_identifier
+  error - The name 'BoxConstraints' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:110:30 - creation_with_non_type
+  error - The method 'BoxDecoration' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:111:23 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:112:20 - undefined_identifier
+  error - Undefined name 'BorderRadius' - lib\presentation\screens\technician\tech_job_board.dart:113:27 - undefined_identifier
+  error - Undefined name 'Border' - lib\presentation\screens\technician\tech_job_board.dart:114:21 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:116:21 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:117:21 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:121:18 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:122:33 - undefined_identifier
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:124:15 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:125:36 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:127:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:129:28 - undefined_identifier
+  error - Undefined name 'FontWeight' - lib\presentation\screens\technician\tech_job_board.dart:130:35 - undefined_identifier
+  error - The method 'CustomBadge' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:133:19 - undefined_method
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:133:61 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:136:21 - creation_with_non_type
+  error - The name 'Padding' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:138:23 - creation_with_non_type
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:139:28 - undefined_identifier
+  error - The method 'Center' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:140:26 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:141:28 - undefined_method
+  error - The method 'TextStyle' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:143:30 - undefined_method
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:143:47 - undefined_identifier
+  error - The method 'Padding' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:148:24 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:149:34 - undefined_identifier
+  error - The method 'Draggable' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:150:26 - undefined_method
+  error - The method 'Material' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:152:31 - undefined_method
+  error - Undefined name 'MaterialType' - lib\presentation\screens\technician\tech_job_board.dart:153:29 - undefined_identifier
+  error - The method 'SizedBox' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:154:28 - undefined_method
+  error - Local variable '_buildJobCard' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:156:32 - referenced_before_declaration
+  error - The method 'Opacity' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:159:40 - undefined_method
+  error - Local variable '_buildJobCard' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:161:30 - referenced_before_declaration
+  error - Local variable '_buildJobCard' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:163:28 - referenced_before_declaration
+  error - Undefined class 'Widget' - lib\presentation\screens\technician\tech_job_board.dart:174:3 - undefined_class
+   info - The local variable '_buildJobCard' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:174:10 - no_leading_underscores_for_local_identifiers
+  error - Undefined class 'BuildContext' - lib\presentation\screens\technician\tech_job_board.dart:175:5 - undefined_class
+  error - Undefined class 'DataProvider' - lib\presentation\screens\technician\tech_job_board.dart:178:5 - undefined_class
+  error - The method 'CustomCard' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:180:12 - undefined_method
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:182:14 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:183:29 - undefined_identifier
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:185:11 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:186:32 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:188:15 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:190:24 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:191:26 - undefined_identifier
+  error - Local variable '_buildStatusBadge' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:194:15 - referenced_before_declaration
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:197:17 - creation_with_non_type
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:198:11 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:199:33 - undefined_identifier
+  error - The method 'ClipRRect' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:202:17 - undefined_method
+  error - Undefined name 'BorderRadius' - lib\presentation\screens\technician\tech_job_board.dart:203:33 - undefined_identifier
+  error - Undefined name 'Image' - lib\presentation\screens\technician\tech_job_board.dart:204:26 - undefined_identifier
+  error - Undefined name 'BoxFit' - lib\presentation\screens\technician\tech_job_board.dart:208:26 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:211:47 - creation_with_non_type
+  error - The method 'Expanded' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:212:15 - undefined_method
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:213:24 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:214:39 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:216:21 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:218:30 - undefined_identifier
+  error - Undefined name 'FontWeight' - lib\presentation\screens\technician\tech_job_board.dart:219:37 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:222:27 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:223:21 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:225:30 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:227:21 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:229:30 - undefined_identifier
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:231:62 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:238:17 - creation_with_non_type
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:239:11 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:240:32 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:242:15 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:242:40 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:244:17 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:246:26 - undefined_identifier
+  error - Undefined name 'FontWeight' - lib\presentation\screens\technician\tech_job_board.dart:248:63 - undefined_identifier
+  error - The method 'Icon' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:250:15 - undefined_method
+  error - Undefined name 'Icons' - lib\presentation\screens\technician\tech_job_board.dart:251:17 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:253:24 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:258:19 - creation_with_non_type
+  error - The method 'LinearProgressIndicator' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:259:13 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:265:32 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:268:22 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:270:19 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:271:13 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:273:22 - undefined_identifier
+  error - Undefined class 'Widget' - lib\presentation\screens\technician\tech_job_board.dart:281:3 - undefined_class
+   info - The local variable '_buildStatusBadge' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:281:10 - no_leading_underscores_for_local_identifiers
+  error - The name 'CustomBadge' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:283:20 - creation_with_non_type
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:283:56 - undefined_identifier
+  error - The name 'CustomBadge' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:286:20 - creation_with_non_type
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:286:59 - undefined_identifier
+  error - The name 'CustomBadge' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:289:20 - creation_with_non_type
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:289:53 - undefined_identifier
+  error - The method 'CustomBadge' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:291:12 - undefined_method
+  error - Classes can't be declared inside other classes - lib\presentation\screens\technician\tech_job_board.dart:295:1 - class_in_class
+  error - Expected a class member - lib\presentation\screens\technician\tech_job_board.dart:295:24 - expected_class_member
+   info - Missing type annotation - lib\presentation\screens\technician\tech_job_board.dart:295:32 - strict_top_level_inference
+   info - The variable name 'StatefulWidget' isn't a lowerCamelCase identifier - lib\presentation\screens\technician\tech_job_board.dart:295:32 - non_constant_identifier_names
+  error - Methods must have an explicit list of parameters - lib\presentation\screens\technician\tech_job_board.dart:295:32 - missing_method_parameters
+warning - The value of the local variable 'job' isn't used - lib\presentation\screens\technician\tech_job_board.dart:296:30 - unused_local_variable
+  error - Undefined class 'DataProvider' - lib\presentation\screens\technician\tech_job_board.dart:297:9 - undefined_class
+warning - The value of the local variable 'provider' isn't used - lib\presentation\screens\technician\tech_job_board.dart:297:22 - unused_local_variable
+warning - The value of the local variable 'ref' isn't used - lib\presentation\screens\technician\tech_job_board.dart:298:19 - unused_local_variable
+  error - The name '_JobDetailsSheet' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:300:9 - creation_with_non_type
+  error - Undefined name 'required' - lib\presentation\screens\technician\tech_job_board.dart:302:5 - undefined_identifier
+  error - Expected to find ',' - lib\presentation\screens\technician\tech_job_board.dart:302:14 - expected_token
+  error - The getter 'job' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:302:19 - undefined_getter
+  error - Undefined name 'required' - lib\presentation\screens\technician\tech_job_board.dart:303:5 - undefined_identifier
+  error - Expected to find ',' - lib\presentation\screens\technician\tech_job_board.dart:303:14 - expected_token
+  error - The getter 'provider' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:303:19 - undefined_getter
+  error - Undefined name 'required' - lib\presentation\screens\technician\tech_job_board.dart:304:5 - undefined_identifier
+  error - Expected to find ',' - lib\presentation\screens\technician\tech_job_board.dart:304:14 - expected_token
+  error - The getter 'ref' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:304:19 - undefined_getter
+  error - State isn't a type - lib\presentation\screens\technician\tech_job_board.dart:308:3 - not_a_type
+  error - The name '_JobDetailsSheet' isn't a type, so it can't be used as a type argument - lib\presentation\screens\technician\tech_job_board.dart:308:9 - non_type_as_type_argument
+warning - The declaration 'createState' isn't referenced - lib\presentation\screens\technician\tech_job_board.dart:308:27 - unused_element
+  error - The method '_JobDetailsSheetState' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:308:44 - undefined_method
+  error - Classes can't be declared inside other classes - lib\presentation\screens\technician\tech_job_board.dart:311:1 - class_in_class
+  error - Expected a class member - lib\presentation\screens\technician\tech_job_board.dart:311:29 - expected_class_member
+   info - Missing type annotation - lib\presentation\screens\technician\tech_job_board.dart:311:37 - strict_top_level_inference
+   info - The variable name 'State' isn't a lowerCamelCase identifier - lib\presentation\screens\technician\tech_job_board.dart:311:37 - non_constant_identifier_names
+  error - Methods must have an explicit list of parameters - lib\presentation\screens\technician\tech_job_board.dart:311:37 - missing_method_parameters
+   info - The local variable '_checklist' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:312:26 - no_leading_underscores_for_local_identifiers
+  error - Undefined class 'TextEditingController' - lib\presentation\screens\technician\tech_job_board.dart:313:8 - undefined_class
+   info - The local variable '_estimatedTimeController' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:313:30 - no_leading_underscores_for_local_identifiers
+warning - The declaration 'initState' isn't referenced - lib\presentation\screens\technician\tech_job_board.dart:316:8 - unused_element
+  error - The method 'initState' isn't defined in a superclass of 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:317:11 - undefined_super_member
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:319:7 - undefined_identifier
+  error - The method 'TextEditingController' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:321:32 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:322:13 - undefined_identifier
+warning - The declaration 'dispose' isn't referenced - lib\presentation\screens\technician\tech_job_board.dart:327:8 - unused_element
+  error - The method 'dispose' isn't defined in a superclass of 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:329:11 - undefined_super_member
+  error - Undefined class 'Widget' - lib\presentation\screens\technician\tech_job_board.dart:333:3 - undefined_class
+warning - The declaration 'build' isn't referenced - lib\presentation\screens\technician\tech_job_board.dart:333:10 - unused_element
+  error - Undefined class 'BuildContext' - lib\presentation\screens\technician\tech_job_board.dart:333:16 - undefined_class
+  error - The method 'Container' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:334:12 - undefined_method
+  error - Undefined name 'MediaQuery' - lib\presentation\screens\technician\tech_job_board.dart:335:15 - undefined_identifier
+  error - The method 'BoxDecoration' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:336:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:337:16 - undefined_identifier
+  error - Undefined name 'BorderRadius' - lib\presentation\screens\technician\tech_job_board.dart:338:29 - undefined_identifier
+  error - Undefined name 'Radius' - lib\presentation\screens\technician\tech_job_board.dart:338:56 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:340:14 - undefined_method
+  error - The method 'Container' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:342:11 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:343:28 - undefined_identifier
+  error - The method 'BoxDecoration' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:344:25 - undefined_method
+  error - The method 'Border' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:345:23 - undefined_method
+  error - The method 'BorderSide' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:346:25 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:346:43 - undefined_identifier
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:349:20 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:350:34 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:352:17 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:353:39 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:355:21 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:356:23 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:357:30 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:359:21 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:360:23 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:361:30 - undefined_identifier
+  error - The method 'IconButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:365:17 - undefined_method
+  error - The name 'Icon' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:366:31 - creation_with_non_type
+  error - Undefined name 'Icons' - lib\presentation\screens\technician\tech_job_board.dart:366:36 - undefined_identifier
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:367:36 - undefined_identifier
+  error - The method 'Expanded' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:372:11 - undefined_method
+  error - The method 'SingleChildScrollView' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:373:20 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:374:30 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:375:22 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:376:37 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:378:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:380:28 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:382:25 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:383:19 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:384:24 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:384:60 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:386:25 - creation_with_non_type
+  error - The method 'CustomTextField' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:387:19 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:391:23 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:392:25 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:397:25 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:399:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:401:28 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:403:25 - creation_with_non_type
+  error - The type 'Consumer' is declared with 0 type parameters, but 1 type arguments were given - lib\presentation\screens\technician\tech_job_board.dart:404:19 - wrong_number_of_type_arguments
+  error - The name 'DataProvider' isn't a type, so it can't be used as a type argument - lib\presentation\screens\technician\tech_job_board.dart:404:28 - non_type_as_type_argument
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:407:28 - undefined_identifier
+  error - The getter 'staff' isn't defined for the type 'WidgetRef' - lib\presentation\screens\technician\tech_job_board.dart:410:64 - undefined_getter
+  error - The name 'Text' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:419:38 - creation_with_non_type
+  error - The method 'Wrap' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:421:30 - undefined_method
+  error - The method 'Chip' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:425:34 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:426:36 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:428:31 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:429:33 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:438:25 - creation_with_non_type
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:439:19 - undefined_method
+  error - The method 'of' isn't defined for the type 'Provider' - lib\presentation\screens\technician\tech_job_board.dart:442:53 - undefined_method
+  error - The name 'DataProvider' isn't a type, so it can't be used as a type argument - lib\presentation\screens\technician\tech_job_board.dart:442:56 - non_type_as_type_argument
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:448:28 - undefined_identifier
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:455:23 - undefined_identifier
+  error - The method 'StatefulBuilder' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:458:34 - undefined_method
+  error - Undefined class 'BuildContext' - lib\presentation\screens\technician\tech_job_board.dart:460:32 - undefined_class
+  error - Undefined class 'StateSetter' - lib\presentation\screens\technician\tech_job_board.dart:460:54 - undefined_class
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:461:40 - undefined_method
+  error - Undefined name 'MainAxisSize' - lib\presentation\screens\technician\tech_job_board.dart:462:49 - undefined_identifier
+  error - The method 'CheckboxListTile' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:464:44 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:465:46 - undefined_method
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:486:27 - undefined_method
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:488:46 - undefined_identifier
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:490:27 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:496:35 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:497:37 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:505:35 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:506:37 - undefined_identifier
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:511:31 - undefined_identifier
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:512:31 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:522:25 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:524:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:526:28 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:528:25 - creation_with_non_type
+  error - The method 'CheckboxListTile' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:530:28 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:531:39 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:532:30 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:534:36 - undefined_identifier
+  error - The method 'setState' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:536:25 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:539:25 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:540:27 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:548:25 - creation_with_non_type
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:549:19 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:550:40 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:552:23 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:554:32 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:558:25 - creation_with_non_type
+  error - The method 'InkWell' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:559:19 - undefined_method
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:561:23 - undefined_identifier
+  error - The method 'Container' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:566:28 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:568:38 - undefined_identifier
+  error - The method 'BoxDecoration' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:569:35 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:570:32 - undefined_identifier
+  error - Undefined name 'Border' - lib\presentation\screens\technician\tech_job_board.dart:573:33 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:574:34 - undefined_identifier
+  error - Undefined name 'BorderStyle' - lib\presentation\screens\technician\tech_job_board.dart:575:34 - undefined_identifier
+  error - Undefined name 'BorderRadius' - lib\presentation\screens\technician\tech_job_board.dart:577:39 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:579:30 - undefined_method
+  error - The method 'Icon' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:581:27 - undefined_method
+  error - Undefined name 'Icons' - lib\presentation\screens\technician\tech_job_board.dart:582:29 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:584:36 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:586:33 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:587:27 - undefined_method
+  error - The method 'TextStyle' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:589:36 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:590:38 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:598:25 - creation_with_non_type
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:599:19 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:600:40 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:602:23 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:604:32 - undefined_identifier
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:606:23 - undefined_method
+  error - Undefined name 'Icons' - lib\presentation\screens\technician\tech_job_board.dart:608:31 - undefined_identifier
+  error - Undefined name 'ButtonType' - lib\presentation\screens\technician\tech_job_board.dart:609:31 - undefined_identifier
+  error - Undefined class 'TextEditingController' - lib\presentation\screens\technician\tech_job_board.dart:611:33 - undefined_class
+  error - The method 'TextEditingController' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:612:31 - undefined_method
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:613:27 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:616:38 - undefined_method
+  error - Undefined name 'MainAxisSize' - lib\presentation\screens\technician\tech_job_board.dart:617:45 - undefined_identifier
+  error - The method 'CustomTextField' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:619:33 - undefined_method
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:624:39 - creation_with_non_type
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:626:36 - undefined_identifier
+  error - The method 'ListTile' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:629:42 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:630:44 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:631:47 - undefined_method
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:632:47 - undefined_method
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:635:41 - undefined_identifier
+  error - Undefined name 'ref' - lib\presentation\screens\technician\tech_job_board.dart:636:41 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:642:54 - undefined_identifier
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:648:41 - undefined_identifier
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:659:31 - undefined_method
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:661:50 - undefined_identifier
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:663:31 - undefined_method
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:667:37 - undefined_identifier
+  error - Local variable '_showPartsDetailsDialog' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:668:37 - referenced_before_declaration
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:668:70 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:668:112 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:678:25 - creation_with_non_type
+  error - The name 'LinearProgressIndicator' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:683:46 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:684:42 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:687:63 - undefined_identifier
+  error - The name 'Text' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:690:42 - creation_with_non_type
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:692:35 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:693:49 - undefined_identifier
+  error - The method 'Padding' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:695:38 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:696:48 - undefined_identifier
+  error - The method 'CustomCard' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:697:40 - undefined_method
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:698:42 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:699:57 - undefined_identifier
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:701:39 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:702:60 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:704:43 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:706:52 - undefined_identifier
+  error - The method 'CustomBadge' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:708:43 - undefined_method
+  error - Local variable '_getPriorityBadgeType' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:710:51 - referenced_before_declaration
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:714:45 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:715:39 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:717:48 - undefined_identifier
+  error - Local variable '_getStatusColor' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:718:50 - referenced_before_declaration
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:721:39 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:723:48 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:725:39 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:727:48 - undefined_identifier
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:727:103 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:740:25 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:742:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:744:28 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:746:25 - creation_with_non_type
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:747:23 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:748:24 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:750:25 - undefined_identifier
+  error - The method 'Padding' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:753:30 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:754:40 - undefined_identifier
+  error - The method 'CustomCard' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:755:32 - undefined_method
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:756:34 - undefined_method
+  error - Undefined name 'CrossAxisAlignment' - lib\presentation\screens\technician\tech_job_board.dart:757:49 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:759:31 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:761:40 - undefined_identifier
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:762:55 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:764:37 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:765:31 - undefined_method
+  error - The name 'Text' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:772:27 - creation_with_non_type
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:773:25 - creation_with_non_type
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:774:19 - undefined_method
+  error - Undefined class 'TextEditingController' - lib\presentation\screens\technician\tech_job_board.dart:777:29 - undefined_class
+  error - The method 'TextEditingController' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:778:27 - undefined_method
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:779:23 - undefined_identifier
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:782:34 - undefined_method
+  error - Undefined name 'MainAxisSize' - lib\presentation\screens\technician\tech_job_board.dart:783:41 - undefined_identifier
+  error - The method 'CustomTextField' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:785:29 - undefined_method
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:791:35 - creation_with_non_type
+  error - The method 'DropdownButtonFormField' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:792:29 - undefined_method
+  error - The name 'InputDecoration' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:793:49 - creation_with_non_type
+  error - The method 'OutlineInputBorder' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:795:41 - undefined_method
+  error - The method 'DropdownMenuItem' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:801:40 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:803:42 - undefined_method
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:813:27 - undefined_method
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:815:46 - undefined_identifier
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:817:27 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:821:33 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:822:35 - undefined_identifier
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:826:33 - undefined_identifier
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:827:33 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:838:25 - creation_with_non_type
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:840:19 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:842:28 - undefined_identifier
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:844:25 - creation_with_non_type
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:845:23 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:846:25 - undefined_identifier
+  error - The method 'CheckboxListTile' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:849:34 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:850:45 - undefined_identifier
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:851:36 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:853:34 - undefined_identifier
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:855:42 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:857:31 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:858:33 - undefined_identifier
+  error - The method 'Container' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:870:11 - undefined_method
+  error - Undefined name 'EdgeInsets' - lib\presentation\screens\technician\tech_job_board.dart:871:28 - undefined_identifier
+  error - The method 'BoxDecoration' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:872:25 - undefined_method
+  error - The method 'Border' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:873:23 - undefined_method
+  error - The method 'BorderSide' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:874:22 - undefined_method
+  error - Undefined name 'Theme' - lib\presentation\screens\technician\tech_job_board.dart:874:40 - undefined_identifier
+  error - The method 'Row' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:877:20 - undefined_method
+  error - The method 'Expanded' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:879:17 - undefined_method
+  error - The method 'CustomButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:880:26 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:881:27 - undefined_identifier
+  error - Local variable '_isCompletionChecklistComplete' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:883:28 - referenced_before_declaration
+  error - Local variable '_isCompletionChecklistComplete' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:884:27 - referenced_before_declaration
+  error - Undefined name 'ButtonType' - lib\presentation\screens\technician\tech_job_board.dart:884:62 - undefined_identifier
+  error - Undefined name 'ButtonType' - lib\presentation\screens\technician\tech_job_board.dart:884:83 - undefined_identifier
+  error - Local variable '_isCompletionChecklistComplete' can't be referenced before it is declared - lib\presentation\screens\technician\tech_job_board.dart:886:27 - referenced_before_declaration
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:887:31 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:888:34 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:889:86 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:894:31 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:894:63 - undefined_identifier
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:895:25 - undefined_identifier
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:896:25 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:898:31 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:899:34 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:900:86 - undefined_identifier
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:904:25 - undefined_identifier
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:905:25 - undefined_identifier
+   info - The local variable '_isCompletionChecklistComplete' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:918:8 - no_leading_underscores_for_local_identifiers
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:919:10 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:920:13 - undefined_identifier
+   info - The local variable '_showPartsDetailsDialog' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:924:8 - no_leading_underscores_for_local_identifiers
+  error - Undefined class 'BuildContext' - lib\presentation\screens\technician\tech_job_board.dart:924:32 - undefined_class
+  error - Undefined class 'DataProvider' - lib\presentation\screens\technician\tech_job_board.dart:924:54 - undefined_class
+  error - The method 'TextEditingController' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:926:29 - undefined_method
+  error - The method 'showDialog' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:928:5 - undefined_method
+  error - The method 'StatefulBuilder' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:930:29 - undefined_method
+  error - The method 'AlertDialog' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:931:41 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:932:18 - undefined_method
+  error - The method 'Column' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:933:20 - undefined_method
+  error - Undefined name 'MainAxisSize' - lib\presentation\screens\technician\tech_job_board.dart:934:27 - undefined_identifier
+  error - The method 'DropdownButtonFormField' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:936:15 - undefined_method
+  error - The name 'InputDecoration' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:938:35 - creation_with_non_type
+  error - The method 'DropdownMenuItem' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:939:73 - undefined_method
+  error - The method 'Text' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:939:107 - undefined_method
+  error - The name 'SizedBox' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:942:21 - creation_with_non_type
+  error - The method 'TextField' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:943:15 - undefined_method
+  error - The name 'InputDecoration' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:945:35 - creation_with_non_type
+  error - Undefined name 'TextInputType' - lib\presentation\screens\technician\tech_job_board.dart:946:31 - undefined_identifier
+  error - The method 'TextButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:951:13 - undefined_method
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:951:41 - undefined_identifier
+  error - The name 'Text' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:951:78 - creation_with_non_type
+  error - The method 'ElevatedButton' isn't defined for the type 'TechJobBoard' - lib\presentation\screens\technician\tech_job_board.dart:952:13 - undefined_method
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:954:23 - undefined_identifier
+  error - Undefined name 'widget' - lib\presentation\screens\technician\tech_job_board.dart:956:78 - undefined_identifier
+  error - Undefined name 'Navigator' - lib\presentation\screens\technician\tech_job_board.dart:965:17 - undefined_identifier
+  error - Undefined name 'UiUtils' - lib\presentation\screens\technician\tech_job_board.dart:966:17 - undefined_identifier
+  error - The name 'Text' isn't a class - lib\presentation\screens\technician\tech_job_board.dart:968:28 - creation_with_non_type
+  error - Undefined class 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:976:3 - undefined_class
+   info - The local variable '_getPriorityBadgeType' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:976:13 - no_leading_underscores_for_local_identifiers
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:978:31 - undefined_identifier
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:979:27 - undefined_identifier
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:980:29 - undefined_identifier
+  error - Undefined name 'BadgeType' - lib\presentation\screens\technician\tech_job_board.dart:981:23 - undefined_identifier
+  error - Undefined class 'Color' - lib\presentation\screens\technician\tech_job_board.dart:985:3 - undefined_class
+   info - The local variable '_getStatusColor' starts with an underscore - lib\presentation\screens\technician\tech_job_board.dart:985:9 - no_leading_underscores_for_local_identifiers
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:986:38 - undefined_identifier
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:987:38 - undefined_identifier
+  error - Undefined name 'Colors' - lib\presentation\screens\technician\tech_job_board.dart:988:12 - undefined_identifier
+  error - Expected to find '}' - lib\presentation\screens\technician\tech_job_board.dart:991:1 - expected_token
+warning - Unused import: 'dart:math' - lib\presentation\screens\technician\vin_scanner_screen.dart:4:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\technician\vin_scanner_screen.dart:7:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_badge.dart:9:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:24:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:28:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:32:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:36:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:40:33 - deprecated_member_use
+warning - This default clause is covered by the previous cases - lib\presentation\widgets\custom_badge.dart:44:7 - unreachable_switch_default
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_button.dart:13:9 - use_super_parameters
+warning - This default clause is covered by the previous cases - lib\presentation\widgets\custom_button.dart:62:7 - unreachable_switch_default
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_card.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_textfield.dart:17:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_textfield.dart:41:60 - deprecated_member_use
+

@@ -1,0 +1,87 @@
+﻿Analyzing Service Center App...                                 
+
+   info - The constant name 'JOBS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:8:23 - constant_identifier_names
+   info - The constant name 'INVENTORY_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:9:23 - constant_identifier_names
+   info - The constant name 'CUSTOMER_VEHICLES_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:10:23 - constant_identifier_names
+   info - The constant name 'CUSTOMER_QUOTES_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:11:23 - constant_identifier_names
+   info - The constant name 'NOTIFICATIONS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:12:23 - constant_identifier_names
+   info - The constant name 'INVOICES_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:13:23 - constant_identifier_names
+   info - The constant name 'STAFF_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:14:23 - constant_identifier_names
+   info - The constant name 'PARTS_REQUESTS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:15:23 - constant_identifier_names
+   info - The constant name 'CHAT_CONVERSATIONS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:16:23 - constant_identifier_names
+   info - The constant name 'TIME_TRACKING_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:17:23 - constant_identifier_names
+   info - The constant name 'PERFORMANCE_METRICS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:18:23 - constant_identifier_names
+   info - The constant name 'USERS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:19:23 - constant_identifier_names
+   info - The constant name 'PARTS_REQUISITION_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:20:23 - constant_identifier_names
+   info - The constant name 'TOW_REQUESTS_COLLECTION' isn't a lowerCamelCase identifier - lib\data\services\mongodb_service.dart:21:23 - constant_identifier_names
+   info - Don't invoke 'print' in production code - lib\data\services\mongodb_service.dart:35:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\data\services\mongodb_service.dart:49:7 - avoid_print
+  error - Undefined name 'MockDataService' - lib\presentation\providers\data_provider.dart:810:12 - undefined_identifier
+warning - Unused import: 'package:flutter/material.dart' - lib\presentation\router\app_router.dart:1:8 - unused_import
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:72:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:73:23 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:80:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\presentation\screens\customer\book_service.dart:81:23 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\book_service.dart:222:37 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\book_service.dart:223:33 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\book_service.dart:239:68 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\customer_dashboard.dart:154:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\customer_dashboard.dart:176:55 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\presentation\screens\customer\customer_garage.dart:157:27 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\customer_garage.dart:201:41 - use_build_context_synchronously
+warning - Unused import: 'package:lucide_icons/lucide_icons.dart' - lib\presentation\screens\customer\emergency_tow_screen.dart:4:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\emergency_tow_screen.dart:111:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\customer\emergency_tow_screen.dart:298:60 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\emergency_tow_screen.dart:365:37 - use_build_context_synchronously
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\customer\invoice_screen.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\customer\payment_screen.dart:13:9 - use_super_parameters
+warning - Unused import: 'payment_screen.dart' - lib\presentation\screens\customer\service_history.dart:8:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\service_history.dart:227:31 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\customer\service_history.dart:228:35 - use_build_context_synchronously
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\login_screen.dart:9:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\login_screen.dart:48:45 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\presentation\screens\main_scaffold.dart:85:28 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:199:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:243:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:257:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\main_scaffold.dart:403:32 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\manager\active_jobs_list.dart:8:9 - use_super_parameters
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\manager\active_jobs_list.dart:76:7 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\presentation\screens\manager\active_jobs_list.dart:88:36 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\presentation\screens\manager\active_jobs_list.dart:89:24 - curly_braces_in_flow_control_structures
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\manager\active_jobs_list.dart:99:31 - use_build_context_synchronously
+warning - Unused import: '../../widgets/custom_textfield.dart' - lib\presentation\screens\manager\staff_attendance.dart:8:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\manager\staff_attendance.dart:12:9 - use_super_parameters
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\presentation\screens\manager\staff_attendance.dart:39:15 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\manager\staff_attendance.dart:117:74 - deprecated_member_use
+warning - Unused import: 'dart:math' - lib\presentation\screens\owner\hq_analytics.dart:1:8 - unused_import
+   info - Constructors in '@immutable' classes should be declared as 'const' - lib\presentation\screens\owner\hq_analytics.dart:13:3 - prefer_const_constructors_in_immutables
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\technician\tech_chat_screen.dart:10:9 - use_super_parameters
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\screens\technician\tech_chat_screen.dart:82:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_chat_screen.dart:118:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_chat_screen.dart:122:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_dashboard.dart:678:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_dashboard.dart:679:26 - deprecated_member_use
+warning - The value of the local variable 'jobs' isn't used - lib\presentation\screens\technician\tech_job_board.dart:29:11 - unused_local_variable
+warning - A value for optional parameter 'key' isn't ever given - lib\presentation\screens\technician\tech_job_board.dart:276:11 - unused_element_parameter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\screens\technician\tech_job_board.dart:546:47 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\technician\tech_job_board.dart:851:39 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\technician\tech_job_board.dart:852:43 - use_build_context_synchronously
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\presentation\screens\technician\tech_job_board.dart:891:17 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\technician\tech_job_board.dart:914:31 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\presentation\screens\technician\tech_job_board.dart:915:35 - use_build_context_synchronously
+warning - Unused import: 'dart:math' - lib\presentation\screens\technician\vin_scanner_screen.dart:4:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\presentation\screens\technician\vin_scanner_screen.dart:7:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_badge.dart:9:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:24:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:28:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:32:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:36:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_badge.dart:40:33 - deprecated_member_use
+warning - This default clause is covered by the previous cases - lib\presentation\widgets\custom_badge.dart:44:7 - unreachable_switch_default
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_button.dart:13:9 - use_super_parameters
+warning - This default clause is covered by the previous cases - lib\presentation\widgets\custom_button.dart:62:7 - unreachable_switch_default
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_card.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\presentation\widgets\custom_textfield.dart:17:9 - use_super_parameters
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\custom_textfield.dart:41:60 - deprecated_member_use
+
